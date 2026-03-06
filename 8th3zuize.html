@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Chào Mừng 8/3</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body{
+    background-image:url(https://image2url.com/r2/default/images/1771560261638-279e53f0-175b-4139-ad0a-6519339bc528.png);
+    background-size:100%;
+}
+nav{
+    text-align:center;
+    margin-top:-10px;
+}
+nav a{
+    color:white;
+    margin: 12px;
+    font-weight:bold;
+    padding:6px 14px;
+    border-radius:20px;
+    transition:0.3s;
+    font-size:20px;
+    text-decoration:none;
+}
+nav a:hover{
+    background-color:white;
+    color:#ff66b2;
+}
+.nen{
+    margin:60px auto;
+    width:85%;
+    padding:35px 20px;
+    border-radius:25px;
+    scroll-margin-top:70px;
+    background-color:rgba(255,255,255,0.6);
+}
+.nen h2{
+    text-align:center;
+    color:#ff3399;
+    margin-bottom:25px;
+    font-size:36px;
+}
+.grid{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    gap:25px;
+}
+.anh{
+    background-color:#fed5f2;
+    border-radius:20px;
+    text-align:center;
+    padding:15px;
+    transition:0.3s;
+}
+.anh img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
+    transition:0.3s;
+}
+.gt {
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+.gt-anh{
+    padding:40px;
+    margin-top:50px;
+}
+.gt-anh img {
+    height:350px;
+    width:100%;
+    border-radius:100px;
+}
+.gt-text{
+    font-size:23px;
+    padding:40px;
+}
+.anh:hover{
+    transform:scale(1.4);
+}
+.anh p{
+    margin-top:10px;
+    font-weight:bold;
+    color:#ff3399;
+}
+.opening {
+    width:100%;
+    height:100%;
+    background-image:url(https://image2url.com/r2/default/images/1771560759882-028a1577-9311-46c6-8f2e-705bb6568c2b.png);
+    display:flex;
+    z-index:1001;
+    position:fixed;
+    align-items:center;
+    justify-content:center;
+}
+.header{
+    background-color:#ff66b2;
+    padding:20px ;
+    position:sticky;
+    top:0;
+    z-index:1000;
+    height:70px;
+    width:100%;
+}
+label {
+    font-size:50px;
+    border-radius:10px;
+    background-color:white;
+    padding:10px;
+    opacity:0.8;
+    transition:0.5s;
+}
+label:hover {
+    transform:scale(1.1);
+}
+.opening:has(#kichhoat:checked) {
+    opacity:0;
+    transition:opacity 0.5s;
+    pointer-events:none;
+}
+html{
+    scroll-behavior:smooth;
+}
+.hanhtrinh div {
+    display:inline-block;
+    font-size:27px;
+    max-width:50%;
+    padding:30px;
+    padding-left:50px;
+}
+.hanhtrinh a {
+    font-size:40px;
+    text-decoration:none;
+    position:relative;
+    top:10px;
+    left:120px;
+    transition:0.5s;
+    display:inline-block;
+    width:400px;
+    height:100px;
+}
+.hanhtrinh img {
+    width:80%;
+    height:auto;
+    border-radius:10px;
+    object-fit:scale-down;
+}
+.hanhtrinh a:hover {
+    transform:scale(1.1);
+}
+#kiniem {
+    scroll-margin-top:110px;
+    margin-top:70px;
+}
+h1.chia {
+    font-size:30px;
+    padding:20px;
+    text-align:center;
+    margin-top:40px;
+    background-color:ghostwhite;
+    opacity:0.8;
+    width:100%;
+}
+.header h1 {
+    color:white;
+    padding-top:5px;
+    display:inline-block;
+    margin-left:-150px;
+    width:50%;
+    margin-top:-10px;
+}
+*{
+    margin:0;
+    padding:0;
+    font-family:"Pacifico";
+    box-sizing:border-box;
+    color:#ff3399;
+}
+</style>
+</head>
+<body>
+<div class="opening">
+    <input type="radio" id="kichhoat" hidden>
+    <label for="kichhoat"> Bấm vào để bắt đầu chuyến hành trình cùng 12a1 nhé! </label>
+</div>
+<div class="header">
+    <nav>
+        <h1>Chuyến Tàu A1K23</h1>
+        <a href="#gt">Trang chủ</a>
+        <a href="#kiniem">Kỉ niệm</a>
+        <a href="#to1">Tổ 1</a>
+        <a href="#to2">Tổ 2</a>
+        <a href="#to3">Tổ 3</a>
+        <a href="#to4">Tổ 4</a>
+    </nav>
+</div>
+<div class="gt" id="gt">
+    <div class="gt-anh">
+        <img src="https://image2url.com/r2/default/images/1771520716885-3916dcd5-f12e-4d89-ac56-c7aafece3a0f.jpg">
+    </div>
+    <div class="gt-text">
+        <h2>Thân gửi các bạn nữ lớp 12a1,</h2>
+        <p>
+            Nhân ngày Quốc tế Phụ nữ 8/3, chúng mình xin gửi đến
+            các bạn nữ những lời chúc tốt đẹp nhất.
+            Cảm ơn vì đã là 1 phần không thể thiếu trong những toa tàu đẹp nhất của chuyến tàu mang tên "Thanh xuân", cảm ơn vì những món quà bất ngờ, những kỉ niệm đặc biệt mà các bạn mang lại cho chúng mình. Dẫu chỉ là 3 năm ngắn ngủi của đời người, đó thật sự là những phút giây đẹp nhất, đáng quý nhất của chúng tớ.
+        </p>
+    </div>
+</div>
+<div class="hanhtrinh" id="kiniem">
+    <div> 3 năm qua, chúng ta đã trải qua biết bao ga tàu, mang theo biết bao những kỉ niệm đáng nhớ khó mà phai mờ trong tim mỗi người, vậy hãy cùng nhau điểm lại chuyến hành trình ấy nhé! </div>
+    <a href="kiniem12a1.html"> <img src="https://image2url.com/r2/default/images/1771518850542-a58709df-f2dd-4c86-8498-185602618759.png"> </a>  
+</div>
+<h1 class="chia"> Và dưới đây, hãy cùng vinh danh những bông hoa đẹp nhất, rực rỡ nhất của tập thể 12a1 nhé!! </h1>
+<div id="to1" class="nen">
+<h2>Tổ 1</h2>
+<div class="grid">
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772718152306-c013afee-b065-499b-b229-8a5834245db6.jpg"><p>Gia Hân</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772718326760-d4552264-e041-44c1-bc38-887602a183a0.jpg"><p>Huyền Trân</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772718379361-f9c6ac18-9d30-47a5-925d-af9feb23f1de.jpg"><p>Hoàng Anh</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772718364797-ab28e50a-e746-4b8a-88d0-f0f39c115a99.jpg"><p>Thúy Mỹ</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1771679676961-db26286d-3519-422b-9bb5-479d6f7b743d.jpg"><p>Bảo Khanh</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772719118655-1c5a3332-61f1-449f-9ed0-d6e07c4ab0bd.jpg"><p>Thúy Uyên</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772719159049-f2f44e71-2f15-4d3e-828c-db78fac8787a.jpg"><p>Thảo Vy</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1771670310670-6ff30672-cebd-4b19-9635-428de9f5aba2.jpg"><p>Như Quỳnh</p></div>
+</div>
+</div>
+<div id="to2" class="nen">
+<h2>Tổ 2</h2>
+<div class="grid">
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772717790952-b4fc3cb9-a883-4698-8020-b9b1b71ce71f.jpg"><p>Thanh Thanh</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772719285714-eba15520-a9b7-44c9-bc3f-0b17b443f240.jpg"><p>Anh Thư</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772719325465-837130d0-11dc-4b45-ac55-1f667ea73240.jpg"><p>Hạnh Nguyên</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772719258828-76cd9a4b-074e-447c-992d-013b930cb28e.jpg"><p>Vân Thoa</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772718446339-63ced652-b8fc-4d6b-ad64-e60c45d1716a.jpg"><p>Ngọc Hà</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772718213459-e0f690ba-3c40-4d7b-a1ab-f92434168ad6.jpg"><p>Ngọc Thắm</p></div>
+</div>
+</div>
+<div id="to3" class="nen">
+<h2> Tổ 3 </h2>
+<div class="grid">
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772718304520-a3265792-4177-46f9-a22d-5fdec5ed11ca.jpg"><p>Dịu Ái</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772718084403-da060d88-326d-4c18-bdc6-7ae31735dc08.jpg"><p>Kim Yến</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772717981595-f13cf193-a982-47cb-b1f2-83fbf162bbe3.jpg"><p>Minh Hiếu</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772719049139-cbf42c8d-2395-4c7d-8684-90f3e15048d0.jpg"><p>Vân Anh</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772717887328-a9a66e88-f929-4772-a7eb-19ad73a3f0b8.jpg"><p>Thu Ngân</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772718628811-39f2c21d-c3a4-411a-8d6d-94a6087daa21.jpg"><p>Nhã Quyên</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772718982172-2b11f7e7-c02a-42b0-953c-d60c27a152b0.jpg"><p>Yến Nhi </p></div>
+</div>
+</div>
+<div id="to4" class="nen">
+<h2> Tổ 4 </h2>
+<div class="grid">
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772719191845-aaa09d57-08c3-4ee9-8360-aacf067de1e0.jpg"><p>Bảo Ngân</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772718513826-61756903-34f6-4a36-9751-3a8653467755.jpg"><p>Bảo Trâm</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772718664960-2c908704-fd81-4df8-b99d-b9c4567e7828.jpg"><p>Khánh Linh</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1771678534383-8963ad43-cf6f-4f89-a0ef-3f0d38b577d6.jpg"><p>Bảo Thy</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772718825507-2c1e555b-051d-4495-81c4-e78f0645e6f7.jpg"><p>Bảo Hân</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772718238402-61b09947-cede-441e-b24a-7ffdd72baedb.jpg"><p>Vương Vy</p></div>
+<div class="anh"><img src="https://image2url.com/r2/default/images/1772718847237-62e30bfe-60e4-4f95-8972-736daa386fdc.jpg"><p>Quỳnh Anh</p></div>
+</div>
+</div>
+</body>
+</html>
